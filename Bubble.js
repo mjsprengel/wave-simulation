@@ -6,9 +6,7 @@ function Bubble(x,y,r1,color){
     this.color = color;
 
     this.show = function(){
-        fill(-this.color/2 + 120, 0, this.color/2 + 120,2);
-        stroke(-this.color/2 + 120, 0, this.color/2 + 120,200);
-        //stroke(255,255,255);
+        stroke(-this.color/2 + 120, 0, this.color/2 + 120);
         ellipse(this.x, this.y, this.r1, 0.33*this.r1);
     }
 
