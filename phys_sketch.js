@@ -14,10 +14,10 @@ function setup(){
 function draw(){
     background(0);
 
-    var amplitude = height/12;
+    var amplitude = height/16;
     var T = sin(frameCount*0.05);
 
-    var sig = height/12;
+    var sig = height/16;
     var Tsig = sin(frameCount*0.092);
 
     var w = map(width*sin(frameCount*.01)**2, 0, width, 75, width/1.5);
