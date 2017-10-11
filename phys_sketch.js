@@ -24,7 +24,7 @@ function draw(){
     //var w = width/6;
     bubbles.push(new Bubble(width/2, height/2 + amplitude*T + sig*Tsig, 0, 255*Tsig));
 
-    for(let i = 0; i < bubbles.length; i++){
+    for(let i = bubbles.length-1; i >= 0; i--){
         bubbles[i].show();
         bubbles[i].grow();
         if(bubbles[i].done(w)){
