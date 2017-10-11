@@ -20,7 +20,7 @@ function draw(){
     var sig = height/12;
     var Tsig = sin(frameCount*0.092);
 
-    var w = map(width*sin(frameCount*.01)**2, 0, displayWidth, 75, displayWidth/2.5);
+    var w = map(width*sin(frameCount*.01)**2, 0, displayWidth, 75, displayWidth/1.5);
     //var w = width/6;
     bubbles.push(new Bubble(width/2, height/2 + amplitude*T + sig*Tsig, 0, 255*Tsig));
 
