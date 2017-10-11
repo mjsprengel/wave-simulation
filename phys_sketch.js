@@ -9,15 +9,15 @@ function setup(){
     document.documentElement.style.overflow = 'hidden'; //hide scroll bars for better viewing chrome/firefox
     document.body.scroll = "no"; //hide scrollbars for ie
     noFill();
+    
+    var amplitude = height/12;
+    var sig = height/12;
 }
 
 function draw(){
     background(0);
 
-    var amplitude = height/12;
     var T = sin(frameCount*0.05);
-
-    var sig = height/12;
     var Tsig = sin(frameCount*0.092);
 
     var w = map(width*sin(frameCount*.01)**2, 0, width, 75, width/1.5);
