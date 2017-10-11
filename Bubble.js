@@ -15,6 +15,6 @@ function Bubble(x,y,r1,color){
     }
 
     this.done = function(w){
-        return (this.r1 > 4*w/2.5);
+        return (this.r1 > w);
     }
 }
